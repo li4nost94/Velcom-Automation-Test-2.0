@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<uilog xmlns:d1p1="http://v8.1c.ru/8.3/uilog">
+  <!--BEGIN 1) IMEI: 111111111111111 Phone Number: 111111111111-->
+  <!--END 1) IMEI: 111111111111111 Phone Number: 111111111111-->
+</uilog>

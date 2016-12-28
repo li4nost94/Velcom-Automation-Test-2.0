@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<uilog xmlns:d1p1="http://v8.1c.ru/8.3/uilog">
+	<ClientApplicationWindow isMain="true">
+		<CommandInterface>
+			<CommandInterfaceGroup title="Панель разделов">
+				<CommandInterfaceButton title="Продажи и возвраты">
+					<click/>
+				</CommandInterfaceButton>
+			</CommandInterfaceGroup>
+			<CommandInterfaceGroup title="Меню функций">
+				<CommandInterfaceButton title="Счета юр. лицам">
+					<click/>
+				</CommandInterfaceButton>
+			</CommandInterfaceGroup>
+		</CommandInterface>
+	</ClientApplicationWindow>
+	<ClientApplicationWindow caption="Счета юр. лицам">
+		<Form title="Счета юр. лицам">
+			<FormGroup name="ФормаКоманднаяПанель" title="Командная панель">
+				<FormButton name="ФормаСоздать" title="Создать">
+					<click/>
+				</FormButton>
+			</FormGroup>
+		</Form>
+	</ClientApplicationWindow>
+	<ClientApplicationWindow caption="Счет юр. лицу (создание)">
+		<Form title="Счет юр. лицу (создание)">
+			<FormGroup name="Группа3" title="Группа3">
+				<FormGroup name="Группа8" title="Группа8">
+					<FormGroup name="Группа5" title="Группа5">
+						<FormField name="НомерТелефона" title="№ тел.">
+							<inputText text="{0}"/>
+						</FormField>
+					</FormGroup>
+					<FormGroup name="Группа4" title="Группа4">
+						<FormField name="Покупатель" title="Покупатель">
+							<activate/>
+						</FormField>
+					</FormGroup>
+				</FormGroup>
+			</FormGroup>
+			<FormGroup name="Группа15" title="Группа15">
+				<FormTable name="Товары" title="Товары">
+					<activate/>
+					<FormField name="ТоварыСНТекстШтрихкод" title="Штрихкод">
+						<activate/>
+						<inputText text="{1}"/>
+					</FormField>
+					<endEditRow cancel="false"/>
+				</FormTable>
+			</FormGroup>
+			<FormGroup name="Группа13" title="Группа13">
+				<FormField name="ТипПродаж" title="Тип продаж">
+					<activate/>
+					<openDropList/>
+					<startChoosing/>
+					<closeDropList/>
+					<openDropList/>
+					<startChoosing/>
+					<closeDropList/>
+					<executeChoiceFromChoiceList presentation="Спец. скидка для Смартфонов"/>
+				</FormField>
+			</FormGroup>
+			<FormGroup name="ФормаКоманднаяПанель" title="Командная панель">
+				<FormButton name="ФормаЗаписать" title="Записать">
+					<click/>
+				</FormButton>
+			</FormGroup>
+			<FormGroup name="Группа18" title="Группа18">
+				<FormGroup name="Группа19" title="Группа19">
+					<FormGroup name="Группа16" title="Группа16">
+						<FormField name="ДанныеОплаты" title="Данные оплаты">
+							<activate/>
+						</FormField>
+					</FormGroup>
+				</FormGroup>
+			</FormGroup>
+			<FormGroup name="Группа13" title="Группа13">
+				<FormField name="ТипПродаж" title="Тип продаж">
+					<activate/>
+					<openDropList/>
+					<startChoosing/>
+					<closeDropList/>
+					<executeChoiceFromChoiceList presentation="Спец.скидка 12 мес ИКП"/>
+					<openDropList/>
+					<startChoosing/>
+					<closeDropList/>
+					<executeChoiceFromChoiceList presentation="Особая цена"/>
+				</FormField>
+			</FormGroup>
+			<FormGroup name="ФормаКоманднаяПанель" title="Командная панель">
+				<FormButton name="ФормаЗаписать" title="Записать">
+					<click/>
+				</FormButton>
+			</FormGroup>
+		</Form>
+	</ClientApplicationWindow>
+</uilog>
